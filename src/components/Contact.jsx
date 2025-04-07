@@ -42,7 +42,7 @@ function Contact() {
 
         <input
           type="text"
-          name="user_name"
+          name="name"
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}

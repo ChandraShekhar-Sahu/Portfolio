@@ -66,9 +66,9 @@ function Navbar() {
         {menu && (
           <div className="flex justify-between items-center w-full px-6 py-4 fixed top-13 bg-transparent z-50">
             <div className="w-1/2"></div>
-            <div className="w-1/2 justify-end backdrop-blur py-2 rounded-lg"> <ul className="flex flex-col  md:hidden space-y-4 justify-center items-center ">
-            {
-                navItems.map(({id, text}) => (
+            <div className="w-1/2 justify-end backdrop-blur py-2 rounded-lg"> 
+            <ul className="flex flex-col  md:hidden space-y-4 justify-center items-center ">
+            {navItems.map(({id, text}) => (
                   <li key={id} className="font-semibold text-xl hover:text-green-500 cursor-pointer" >
                     <Link to={text}
                     smooth ={true}
