@@ -69,13 +69,17 @@ function Navbar() {
             <div className="w-1/2 justify-end backdrop-blur py-2 rounded-lg"> <ul className="flex flex-col  md:hidden space-y-4 justify-center items-center ">
             {
                 navItems.map(({id, text}) => (
-                  <li key={id} className="font-semibold text-xl hover:text-green-500 cursor-pointer">
+                  <li key={id} className="font-semibold text-xl hover:text-green-500 cursor-pointer" >
                     <Link to={text}
                     smooth ={true}
                     duration ={500}
                     offset={-70}
                     activeClass="active"
-                    >{text}
+                    >
+                      <div onClick={() => setMenu(!menu)}>
+                      {text}
+                      </div>
+                     
                     </Link>
                     </li>
                 ))
